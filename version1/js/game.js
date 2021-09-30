@@ -97,20 +97,17 @@
 		 * Horizontals
 		 */
 		if (this.cells[0].getValue() == this.cells[1].getValue() &&
-			this.cells[1].getValue() == this.cells[2].getValue() &&
-			this.cells[2].getValue() == this.cells[0].getValue()) {
+			this.cells[1].getValue() == this.cells[2].getValue()) {
 			return this.cells[0].getValue();
 		}
 
 		if (this.cells[3].getValue() == this.cells[4].getValue() &&
-			this.cells[4].getValue() == this.cells[5].getValue() &&
-			this.cells[5].getValue() == this.cells[3].getValue()) {
+			this.cells[4].getValue() == this.cells[5].getValue()) {
 			return this.cells[3].getValue();
 		}
 
 		if (this.cells[6].getValue() == this.cells[7].getValue() &&
-			this.cells[7].getValue() == this.cells[8].getValue() &&
-			this.cells[8].getValue() == this.cells[6].getValue()) {
+			this.cells[7].getValue() == this.cells[8].getValue()) {
 			return this.cells[6].getValue();
 		}
 
@@ -118,20 +115,17 @@
 		 * Verticals
 		 */
 		if (this.cells[0].getValue() == this.cells[3].getValue() &&
-			this.cells[3].getValue() == this.cells[6].getValue() &&
-			this.cells[6].getValue() == this.cells[0].getValue()) {
+			this.cells[3].getValue() == this.cells[6].getValue()) {
 			return this.cells[0].getValue();
 		}
 
 		if (this.cells[1].getValue() == this.cells[4].getValue() &&
-			this.cells[4].getValue() == this.cells[7].getValue() &&
-			this.cells[7].getValue() == this.cells[1].getValue()) {
+			this.cells[4].getValue() == this.cells[7].getValue()) {
 			return this.cells[1].getValue();
 		}
 
 		if (this.cells[2].getValue() == this.cells[5].getValue() &&
-			this.cells[5].getValue() == this.cells[8].getValue() &&
-			this.cells[8].getValue() == this.cells[2].getValue()) {
+			this.cells[5].getValue() == this.cells[8].getValue()) {
 			return this.cells[2].getValue();
 		}
 
@@ -139,14 +133,12 @@
 		 * Diagonals
 		 */
 		if (this.cells[0].getValue() == this.cells[4].getValue() &&
-			this.cells[4].getValue() == this.cells[8].getValue() &&
-			this.cells[8].getValue() == this.cells[0].getValue()) {
+			this.cells[4].getValue() == this.cells[8].getValue()) {
 			return this.cells[0].getValue();
 		}
 
 		if (this.cells[2].getValue() == this.cells[4].getValue() &&
-			this.cells[4].getValue() == this.cells[6].getValue() &&
-			this.cells[6].getValue() == this.cells[2].getValue()) {
+			this.cells[4].getValue() == this.cells[6].getValue()) {
 			return this.cells[2].getValue();
 		}
 

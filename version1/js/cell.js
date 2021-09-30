@@ -18,7 +18,6 @@
 	}
 
 	Cell.prototype.clickEvent = function (game) {
-		//console.log(this);
 		let player = game.getActivePlayer();
 		this.setValue(player.getValue());
 		game.changeTurn();
