@@ -151,7 +151,6 @@ let Game = (function () {
 	}
 
 	function getWinnerValue(cells) {
-
 		// Horizontals
 		if (cells[0].getValue() && cells[0].getValue() === cells[1].getValue() && cells[1].getValue() === cells[2].getValue()) {
 			checkWinnerRow(cells, [0, 1, 2]);
@@ -174,9 +173,9 @@ let Game = (function () {
 			return cells[0].getValue();
 		}
 
-		if (cells[1].getValue() && cells[1].getValue() === cells[4].getValue() === cells[4].getValue() === cells[7].getValue()) {
+		if (cells[1].getValue() && cells[1].getValue() === cells[4].getValue() && cells[4].getValue() === cells[7].getValue()) {
 			checkWinnerRow(cells, [1, 4, 7]);
-			return cells[1].getValue()
+			return cells[1].getValue();
 		}
 
 		if (cells[2].getValue() && cells[2].getValue() === cells[5].getValue() && cells[5].getValue() === cells[8].getValue()) {
